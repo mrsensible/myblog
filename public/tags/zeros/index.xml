@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zeros on Geographer In Nature</title>
+    <link>/tags/zeros/</link>
+    <description>Recent content in Zeros on Geographer In Nature</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/zeros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to format numbers as fixed width, with leading zeros</title>
+      <link>/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/</guid>
+      <description>As one of the R Users, I feel quite annoying when I encounter string files which have have counters at the end myfile_1.jpg, myfile_2.jpg,....,myfile_11.jpg.  Why does this bother me? Simple. This is because the sorting system in the R environment only sorts files from their higher digits. For example, in R, the files are sorted in this order: myfile_1.jpg, myfile_11.jpg, ..., myfile_19.jpg, myfile_2.jpg, myfile_20.jpgand so on. But for analytic purposes, we need our first nine files ordered correctly.</description>
+    </item>
+    
+  </channel>
+</rss>

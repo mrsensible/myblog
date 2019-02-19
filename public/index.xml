@@ -1,54 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Geographer In Nature</title>
+    <title>Home on Geographer In Nature</title>
     <link>/</link>
-    <description>Recent content on Geographer In Nature</description>
+    <description>Recent content in Home on Geographer In Nature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Oct 2017 03:29:08 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cope | Alexis Collado</title>
-      <link>/cope/</link>
-      <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
+      <title>How to fill in missing data</title>
+      <link>/2018-10-06-how-to-fill-in-missing-data/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/cope/</guid>
-      <description>The Challenge A startup called Cope hired me to create a minimum viable product for their new idea — tracking mental health. It was the first project where I handled mobile app design, and I was very excited to learn the intricacies of the iOS platform.
-My clients John and Kat have done some preliminary interviews with psychologists and psychiatrists to get their side of the picture. They have established a user persona, a business model canvas, and several startup prep work for the product to take off.</description>
+      <guid>/2018-10-06-how-to-fill-in-missing-data/</guid>
+      <description>Filling missing data = Imputation How should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
+In statistical terms, the process of replacing(filling) a gap is defined as imputation. There are various ways to imputate missing data, but since my focus is on time-series data, it has to at least take into account the (seasonal) trend to minimise possible errors.</description>
     </item>
     
     <item>
-      <title>360 Pro | Alexis Collado</title>
-      <link>/360pro/</link>
-      <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
+      <title>How to format numbers as fixed width, with leading zeros</title>
+      <link>/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/360pro/</guid>
-      <description>The Challenge Meeting with Chappy Callanta of 360 Pro led us to discover the root problem — the implementation of their performance testing framework. The gym uses a Numbers document on one iPad to record all tests, and relies on inefficient manual procedures to do the work. The document calculates a total pro score based on an athlete&amp;rsquo;s performance for specific exercises, but the coach using it has to refer to several norms before assigning a pro score.</description>
+      <guid>/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/</guid>
+      <description>As one of the R Users, I feel quite annoying when I encounter string files which have have counters at the end myfile_1.jpg, myfile_2.jpg,....,myfile_11.jpg.  Why does this bother me? Simple. This is because the sorting system in the R environment only sorts files from their higher digits. For example, in R, the files are sorted in this order: myfile_1.jpg, myfile_11.jpg, ..., myfile_19.jpg, myfile_2.jpg, myfile_20.jpgand so on. But for analytic purposes, we need our first nine files ordered correctly.</description>
     </item>
     
     <item>
-      <title>TEDxADMU | Alexis Collado</title>
-      <link>/tedx/</link>
-      <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
+      <title>Hot Keys in R Studio</title>
+      <link>/2018-05-04-hot-keys-in-r-studio/</link>
+      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tedx/</guid>
-      <description>Context The Ateneo Junior Marketing Association always outsourced their website development to different organizations in the university. This year, they chose User Experience Society, the organization I founded to create a strong digital presence for their flagship event. TEDxADMU is acclaimed among the youth and is marked by the many up and coming trailblazers in the Philippine community.
-The Challenge TEDxADMU always faced the same problems every year. How can we elevate the number of applications we receive?</description>
+      <guid>/2018-05-04-hot-keys-in-r-studio/</guid>
+      <description> HUGOMORE42 I was attending an R couse in the University of Leeds Course R for Transport Applications, and was utterly surprised to hear something really rudimentary but wasn’t noticed before: Hot-Keys! To view all Hot Keys, all you need to do is simply hold Shift + Alt + K. That’s it! Once you know some keys during your coding, your work will become less burdon and joyful!  </description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/about/</guid>
+      <description>Hugo is the world’s fastest framework for building websites. It is written in Go.
+It makes use of a variety of open source projects including:
+ https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</description>
     </item>
     
   </channel>

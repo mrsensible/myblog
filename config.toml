@@ -1,46 +1,45 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Geographer In Nature"
-theme = "hugo-lodi-theme"
+defaultContentLanguage = "en"
+theme = "cupper-hugo-theme"
 googleAnalytics = "UA-117542884-1"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+[imaging]
+  quality = 99
+
 [params]
-    theme_color = "#574CDD"
-    description = "Portfolio of Alexis Collado, UX Designer"
-    description_photo = "portfolio.jpg"
-    favicon = "favicon.png"
-    logo = "logo.png"
-    email = "hs621@cam.ac.uk"
-    facebook = "shinhyesop"
-    twitter = "hyesop"
-    #dribbble = "alexiscollado"
-    #linkedin = "https://www.linkedin.com/in/alexander-hans-collado-jr-9444146a"
-    #medium = "ahvccollado"
-    github = "mrsensible"
-    #googlescholar = "https://scholar.google.com/citations?user=XXXXXXXXXXXXXXXXXXXXX=en"
+  description = "Hi! I'm Hyesop, an indoor Geographer working on social models."
+  footer = "All the writings and figures are under my copyright."
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = "2006-01-01"
+  codePenUser = "someUser"
 
-[params.nav]
-    enable = true
-
-[params.hero]
-    enable = true
-    avatar = "avatar.jpg"
-    subtitle = "Hi! I'm Hyesop, an indoor Geographer working on social models."
-    hero_right = ["**Currently doing a Ph.D in Geography**", "I am writing", "Here is my [data storage](https://seoul.netlify.com)"]
-    #resume = "CV.md"
-
-[params.process]
-    enable = true
-    title = "My Interests"
-    subtitle = "Geographer"
-
-[params.case_studies]
-    enable = true
-    title = "Posts"
-    subtitle = "Writing about codes and ideas"
-
-
-
-[params.footer]
-    enable = true
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Blog"
+    url = "/post/"
+    weight = 2
+  [[menu.nav]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  #[[menu.nav]]
+  #  name = "About"
+  #  url = "/about/"
+  #  weight = 4
+  [[menu.nav]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5

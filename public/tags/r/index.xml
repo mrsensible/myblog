@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Geographer In Nature</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on Geographer In Nature</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to fill in missing data</title>
+      <link>/2018-10-06-how-to-fill-in-missing-data/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018-10-06-how-to-fill-in-missing-data/</guid>
+      <description>Filling missing data = Imputation How should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
+In statistical terms, the process of replacing(filling) a gap is defined as imputation. There are various ways to imputate missing data, but since my focus is on time-series data, it has to at least take into account the (seasonal) trend to minimise possible errors.</description>
+    </item>
+    
+    <item>
+      <title>How to format numbers as fixed width, with leading zeros</title>
+      <link>/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/</guid>
+      <description>As one of the R Users, I feel quite annoying when I encounter string files which have have counters at the end myfile_1.jpg, myfile_2.jpg,....,myfile_11.jpg.  Why does this bother me? Simple. This is because the sorting system in the R environment only sorts files from their higher digits. For example, in R, the files are sorted in this order: myfile_1.jpg, myfile_11.jpg, ..., myfile_19.jpg, myfile_2.jpg, myfile_20.jpgand so on. But for analytic purposes, we need our first nine files ordered correctly.</description>
+    </item>
+    
+  </channel>
+</rss>
