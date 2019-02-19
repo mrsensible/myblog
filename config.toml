@@ -40,5 +40,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     title = "Posts"
     subtitle = "Writing about codes and ideas"
 
+
+
 [params.footer]
     enable = true
