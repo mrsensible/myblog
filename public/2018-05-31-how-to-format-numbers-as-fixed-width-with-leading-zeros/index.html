@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="generator" content="Hugo 0.53" />
+  <meta name="generator" content="Hugo 0.49" />
   <link rel="canonical" href="/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -247,10 +247,7 @@
 
 
     
-    
-
-
-<p>As one of the R Users, I feel quite annoying when I encounter string files which have have counters at the end <code>myfile_1.jpg, myfile_2.jpg,....,myfile_11.jpg</code>. </br></br> Why does this bother me? Simple. This is because the sorting system in the R environment only sorts files from their higher digits. For example, in R, the files are sorted in this order: <code>myfile_1.jpg, myfile_11.jpg, ..., myfile_19.jpg, myfile_2.jpg, myfile_20.jpg</code>and so on. But for analytic purposes, we need our first nine files ordered correctly. </br></br></p>
+    <p>As one of the R Users, I feel quite annoying when I encounter string files which have have counters at the end <code>myfile_1.jpg, myfile_2.jpg,....,myfile_11.jpg</code>. </br></br> Why does this bother me? Simple. This is because the sorting system in the R environment only sorts files from their higher digits. For example, in R, the files are sorted in this order: <code>myfile_1.jpg, myfile_11.jpg, ..., myfile_19.jpg, myfile_2.jpg, myfile_20.jpg</code>and so on. But for analytic purposes, we need our first nine files ordered correctly. </br></br></p>
 <p>To solve this we have two options. First, to coercely change the sorting method to a Windows format.</p>
 <pre><code> setwd(&quot;SetDirectory&quot;)
  library(gtools)

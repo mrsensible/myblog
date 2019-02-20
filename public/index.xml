@@ -17,7 +17,7 @@
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018-10-06-how-to-fill-in-missing-data/</guid>
-      <description>Filling missing data = Imputation How should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
+      <description>Filling missing data = ImputationHow should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
 In statistical terms, the process of replacing(filling) a gap is defined as imputation. There are various ways to imputate missing data, but since my focus is on time-series data, it has to at least take into account the (seasonal) trend to minimise possible errors.</description>
     </item>
     
@@ -36,7 +36,7 @@ In statistical terms, the process of replacing(filling) a gap is defined as impu
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018-05-04-hot-keys-in-r-studio/</guid>
-      <description> HUGOMORE42 I was attending an R couse in the University of Leeds Course R for Transport Applications, and was utterly surprised to hear something really rudimentary but wasn’t noticed before: Hot-Keys! To view all Hot Keys, all you need to do is simply hold Shift + Alt + K. That’s it! Once you know some keys during your coding, your work will become less burdon and joyful!  </description>
+      <description>I was attending an R couse in the University of Leeds Course R for Transport Applications, and was utterly surprised to hear something really rudimentary but wasn’t noticed before: Hot-Keys! To view all Hot Keys, all you need to do is simply hold Shift + Alt + K. That’s it! Once you know some keys during your coding, your work will become less burdon and joyful!  </description>
     </item>
     
     <item>
