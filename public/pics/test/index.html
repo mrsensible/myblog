@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.53" />
-  <link rel="canonical" href="/2018-05-31-how-to-format-numbers-as-fixed-width-with-leading-zeros/">
+  <link rel="canonical" href="/pics/test/">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,7 +30,7 @@
 
   
   
-  <title>How to format numbers as fixed width, with leading zeros | Geographer In Nature</title>
+  <title>test | Geographer In Nature</title>
 </head>
 
   <body>
@@ -209,61 +209,11 @@
         <div>
           
   <main id="main">
-    <h1>
-      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      How to format numbers as fixed width, with leading zeros
-    </h1>
-    <div class="date">
-      
-      <strong aria-hidden="true">Publish date: </strong>2018-05-05
-    </div>
-    
-      <div class="tags">
-        <strong aria-hidden="true">Tags: </strong>
-        <ul aria-label="tags">
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="/tags/zeros">zeros</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="/tags/r">R</a>
-            </li>
-          
-        </ul>
-      </div>
-    
-    
-    
-      
-
-
-    
+    <h1>test</h1>
     
 
 
-<p>As one of the R Users, I feel quite annoying when I encounter string files which have have counters at the end <code>myfile_1.jpg, myfile_2.jpg,....,myfile_11.jpg</code>. </br></br> Why does this bother me? Simple. This is because the sorting system in the R environment only sorts files from their higher digits. For example, in R, the files are sorted in this order: <code>myfile_1.jpg, myfile_11.jpg, ..., myfile_19.jpg, myfile_2.jpg, myfile_20.jpg</code>and so on. But for analytic purposes, we need our first nine files ordered correctly. </br></br></p>
-<p>To solve this we have two options. First, to coercely change the sorting method to a Windows format.</p>
-<pre><code> setwd(&quot;SetDirectory&quot;)
- library(gtools)
- files  &lt;- list.files(pattern= &quot;*.tif&quot;)
- my &lt;- mixedsort(sort(files))</code></pre>
-<p></br></p>
-<p>Alternatively, it might be better to add a leading zero file to the single unit files between zero and nine.</p>
-<pre><code>for (i in 1:9){
-  filez &lt;- list.files(pattern = paste(&quot;*_&quot;, i, &quot;.tif&quot;, sep = &quot;&quot;))
-  sapply(filez,FUN=function(eachPath){
-    file.rename(from = eachPath, to = sub(pattern= paste(i,&quot;.tif&quot;, sep = &quot;&quot;) ,replacement= paste(&quot;0&quot;,i,&quot;.tif&quot;, sep = &quot;&quot;),eachPath))
-  })
-} </code></pre>
+
 
   </main>
 

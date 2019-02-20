@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>test</title>
+      <link>/pics/test/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/pics/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How to fill in missing data</title>
       <link>/2018-10-06-how-to-fill-in-missing-data/</link>
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
@@ -36,18 +45,7 @@ In statistical terms, the process of replacing(filling) a gap is defined as impu
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018-05-04-hot-keys-in-r-studio/</guid>
-      <description>I was attending an R couse in the University of Leeds Course R for Transport Applications, and was utterly surprised to hear something really rudimentary but wasn’t noticed before: Hot-Keys! To view all Hot Keys, all you need to do is simply hold Shift + Alt + K. That’s it! Once you know some keys during your coding, your work will become less burdon and joyful!  </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Hugo is the world’s fastest framework for building websites. It is written in Go.
-It makes use of a variety of open source projects including:
- https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</description>
+      <description>HUGOMORE42 I was attending an R couse in the University of Leeds Course R for Transport Applications, and was utterly surprised to hear something really rudimentary but wasn’t noticed before: Hot-Keys! To view all Hot Keys, all you need to do is simply hold Shift + Alt + K. That’s it! Once you know some keys during your coding, your work will become less burdon and joyful!  </description>
     </item>
     
   </channel>
