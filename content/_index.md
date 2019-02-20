@@ -3,7 +3,7 @@ date: "2019-02-19T22:47:58+01:00"
 title: Hi! I'm Hyesop, a quanitative Geographer working on social models.
 ---
 
-**Born in Daegu, South Korea, but flew to the UK to study Geography**. 
+**Born in Daegu, South Korea, but flew to the UK to study agent-based modelling in geography**. 
 
 I am interested in agent-based modelling to understand uncertainty and emergence in social phenomenon. At Cambridge, my doctoral project looks at how air pollution and urbanisation can affect pedestrian's exposure and travel patterns using agent-based simulations. 
 <br>
