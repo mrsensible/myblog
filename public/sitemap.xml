@@ -28,6 +28,10 @@
   </url>
   
   <url>
+    <loc>/research/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/imputation/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -49,6 +53,10 @@
     <loc>/tags/r/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/research/</loc>
   </url>
   
   <url>

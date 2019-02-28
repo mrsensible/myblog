@@ -4,7 +4,7 @@ title = "Geographer In Nature"
 defaultContentLanguage = "en"
 theme = "cupper-hugo-theme"
 googleAnalytics = "UA-117542884-1"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", ".DS_Store"]
 
 [taxonomies]
   tag = "tags"
@@ -17,7 +17,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
   description = "Geography, Models, Football, and Coffee. *Currently @UK*. <br> Words are my own"
-  footer = "All the Writings and Figures are under my Copyright."
+  footer = "Works under the MIT License. Hyesop 2019."
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "2006-01-01"
   codePenUser = "someUser"
@@ -28,17 +28,21 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "/"
     weight = 1
   [[menu.nav]]
+    name = "Research"
+    url = "/research"
+    weight = 2
+  [[menu.nav]]
     name = "R-blog"
     url = "/post/"
-    weight = 2
+    weight = 3
   [[menu.nav]]
     name = "Pictures"
     url = "/pics/"
-    weight = 3
+    weight = 4
   [[menu.nav]]
     name = "Tags"
     url = "/tags/"
-    weight = 4
+    weight = 5
 #  [[menu.nav]]
 #    name = "RSS"
 #    url = "/index.xml"
