@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="generator" content="Hugo 0.53" />
+  <meta name="generator" content="Hugo 0.49" />
   <link rel="canonical" href="/2018-10-06-how-to-fill-in-missing-data/">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -133,7 +133,7 @@
       </a>
       <p class="library-desc">
         
-          Geography, Models, Football, and Coffee. <em>Currently @UK</em>. <br> Words are my own
+          Geography and Coffee. <em>Currently @UK</em>. <br> Words are my own
         
         </a>
       </p>
@@ -304,10 +304,7 @@
 
 
     
-    
-
-
-<div id="filling-missing-data-imputation" class="section level1">
+    <div id="filling-missing-data-imputation" class="section level1">
 <h1>Filling missing data = Imputation</h1>
 <p>How should we deal with missing data? Should we remove them or keep them? <br/> If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using <code>na.rm = T</code>. If not, then we need to do something to fill the gap.</p>
 <p>In statistical terms, the process of replacing(filling) a gap is defined as <strong>imputation</strong>. There are various ways to imputate missing data, but since my focus is on time-series data, it has to at least take into account the (seasonal) trend to minimise possible errors.</p>
