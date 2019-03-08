@@ -5,7 +5,7 @@ title: About me
 <center>
 ![Hyesop](/images/hyesop.jpg)
 </center>
-**I am a [doctoral student](https://www.geog.cam.ac.uk/people/shin/) in [the Geography department](https://www.geog.cam.ac.uk/) at [the University of Cambridge](https://www.cam.ac.uk/).**
+**I am a [doctoral student](https://www.geog.cam.ac.uk/people/shin/) in [the Geography department](https://www.geog.cam.ac.uk/) at [Cambridge University](https://www.cam.ac.uk/).**
 
 You can find me on Twitter [@hyesop](https://twitter.com/hyesop) and GitHub [mrsensible](http://github.com/mrsensible/). Here is my [CV](https://drive.google.com/open?id=1lwYaDOyU9eUrTrQTe-YXRfB-wtiByKmk)
 
