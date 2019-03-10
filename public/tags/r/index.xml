@@ -6,10 +6,21 @@
     <description>Recent content in R on Geographer In Nature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to load gdal packages on the HPC?</title>
+      <link>/posts/hpc/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hpc/</guid>
+      <description>Overview  system에 설치하려는 R의 특성 로컬컴퓨터에서는 적용이 용이하나 클러스터에서는 적용불가. 이유는 R이 클러스터 전체환경을 바꾸려는 시도를 하기 때문. 따라서 사용자 내부환경에서 R 패키지를 설치하게 되었음.   Procedure  Load miniconda
+module load miniconda3-4.5.4-gcc-5.4.0-hivczbz  Install R in a new environment in renv2   conda create -p renv2 conda install R  Activate R on renv2
+source activate /home/hs621/renv2  Install desired R packages: sf, sp, tidyverse</description>
+    </item>
     
     <item>
       <title>How to fill in missing data</title>
@@ -17,7 +28,7 @@
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018-10-06-how-to-fill-in-missing-data/</guid>
-      <description>Filling missing data = ImputationHow should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
+      <description>Filling missing data = Imputation How should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
 In statistical terms, the process of replacing(filling) a gap is defined as imputation. There are various ways to imputate missing data, but since my focus is on time-series data, it has to at least take into account the (seasonal) trend to minimise possible errors.</description>
     </item>
     
