@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Can R users get NetLogo results a simple set of codes? Yes, use `nlrx`</title>
+      <title>nlrx - The best R package for running NetLogo simulation</title>
       <link>/2019-03-18-nlrx/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019-03-18-nlrx/</guid>
-      <description>Intro From the previous blog, you might have noticed the rationale of using high performance computing (HPC), and how fast it is to obtain results compared to our local machines. Having installed all the software requirements on the HPC, today’s post is to simulate a NetLogo model of my Ph.D work in R using an nlrx package.
+      <description>IntroFrom the previous blog, you might have noticed the rationale of using high performance computing (HPC), and how fast it is to obtain results compared to our local machines. Having installed all the software requirements on the HPC, today’s post is to simulate a NetLogo model of my Ph.D work in R using an nlrx package(https://ropensci.github.io/nlrx/).
 nlrx has promoted its uniqueness for adopting .XML to excecute files that contain various conditions (i.</description>
     </item>
     
@@ -27,9 +27,7 @@ nlrx has promoted its uniqueness for adopting .XML to excecute files that contai
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019-03-10-how-to-load-gdal-packages-on-the-hpc/</guid>
-      <description>Overview  system에 설치하려는 R의 특성 로컬컴퓨터에서는 적용이 용이하나 클러스터에서는 적용불가. 이유는 R이 클러스터 전체환경을 바꾸려는 시도를 하기 때문. 따라서 사용자 내부환경에서 R 패키지를 설치하게 되었음.   Procedure  Load miniconda
-module load miniconda3-4.5.4-gcc-5.4.0-hivczbz  Install R in a new environment in renv2   conda create -p renv2 conda install R  Activate R on renv2
-source activate /home/hs621/renv2  Install desired R packages: sf, sp, tidyverse</description>
+      <description>Overviewsystem에 설치하려는 R의 특성로컬컴퓨터에서는 적용이 용이하나 클러스터에서는 적용불가. 이유는 R이 클러스터 전체환경을 바꾸려는 시도를 하기 때문.따라서 사용자 내부환경에서 R 패키지를 설치하게 되었음.ProcedureLoad minicondamodule load miniconda3-4.5.4-gcc-5.4.0-hivczbzInstall R in a new environment in renv2conda create -p renv2conda install RActivate R on renv2source activate /home/hs621/renv2Install desired R packages: sf, sp, tidyverseconda install -p /home/hs621/renv2 R r-sf r-sp</description>
     </item>
     
     <item>
@@ -38,7 +36,7 @@ source activate /home/hs621/renv2  Install desired R packages: sf, sp, tidyverse
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018-10-06-how-to-fill-in-missing-data/</guid>
-      <description>Filling missing data = Imputation How should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
+      <description>Filling missing data = ImputationHow should we deal with missing data? Should we remove them or keep them?  If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using na.rm = T. If not, then we need to do something to fill the gap.
 In statistical terms, the process of replacing(filling) a gap is defined as imputation. There are various ways to imputate missing data, but since my focus is on time-series data, it has to at least take into account the (seasonal) trend to minimise possible errors.</description>
     </item>
     

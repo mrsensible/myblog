@@ -315,9 +315,11 @@
 <h2>Procedure</h2>
 <ul>
 <li><ol style="list-style-type: decimal">
-<li><p>Load miniconda</p>
-<pre><code>module load miniconda3-4.5.4-gcc-5.4.0-hivczbz</code></pre></li>
+<li>Load miniconda</li>
 </ol></li>
+</ul>
+<pre><code>module load miniconda3-4.5.4-gcc-5.4.0-hivczbz</code></pre>
+<ul>
 <li><ol start="2" style="list-style-type: decimal">
 <li>Install R in a new environment in renv2</li>
 </ol></li>
@@ -326,14 +328,16 @@
 conda install R</code></pre>
 <ul>
 <li><ol start="3" style="list-style-type: decimal">
-<li><p>Activate R on renv2</p>
-<pre><code>source activate /home/hs621/renv2</code></pre></li>
-</ol></li>
-<li><ol start="4" style="list-style-type: decimal">
-<li><p>Install desired R packages: sf, sp, tidyverse</p>
-<pre><code>conda install -p /home/hs621/renv2  R r-sf r-sp</code></pre></li>
+<li>Activate R on renv2</li>
 </ol></li>
 </ul>
+<pre><code>source activate /home/hs621/renv2</code></pre>
+<ul>
+<li><ol start="4" style="list-style-type: decimal">
+<li>Install desired R packages: sf, sp, tidyverse</li>
+</ol></li>
+</ul>
+<pre><code>conda install -p /home/hs621/renv2  R r-sf r-sp</code></pre>
 </div>
 
   </main>
