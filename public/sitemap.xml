@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2019-03-18-nlrx/</loc>
+    <lastmod>2019-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2019-03-10-how-to-load-gdal-packages-on-the-hpc/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
@@ -44,6 +49,18 @@
   </url>
   
   <url>
+    <loc>/tags/netlogo/</loc>
+    <lastmod>2019-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/nlrx/</loc>
+    <lastmod>2019-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/pics/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -51,13 +68,13 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

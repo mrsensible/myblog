@@ -1,0 +1,74 @@
+---
+title: Can R users get NetLogo results a simple set of codes? Yes, use `nlrx`
+author: H
+date: '2019-03-18'
+slug: hpc
+categories: 
+  - R:Tips
+  - NetLogo
+tags:
+  - R
+  - NetLogo
+  - nlrx
+---
+## Intro
+
+From the previous blog, you might have noticed the rationale of using high performance computing (HPC), and how fast it is to obtain results compared to our local machines. Having installed all the software requirements on the HPC, today's post is to simulate a *NetLogo* model of my Ph.D work in R using an **nlrx** package.
+
+`nlrx` has promoted its uniqueness for adopting `.XML` to excecute files that contain various conditions (i.e. runtime, variables, constants, stop conditions), as well as reporting results framed as a BehaviorSpace format (https://ccl.northwestern.edu/netlogo/docs/behaviorspace.html). As a passionate NetLogo user, I have to give both thumbs up to this package (psst..! and removed other NetLogo packages). Here are the reasons.
+
+## Intuitive codes
+mainly because the codes are very intuitive. Here is a brief example in Windows and Unix family. After the installation, your first job is to assign your installed NetLogo path, model patch, and the output path. For 
+
+```{r, echo=F}
+############
+#--Setup--##
+############
+# install.packages("devtools")
+devtools::install_github("ropensci/nlrx")
+library(nlrx)
+
+# Windows default NetLogo installation path (adjust to your needs!):
+netlogopath <- file.path("C:/Program Files/NetLogo 6.0.4")
+modelpath <- file.path(netlogopath, "app/models/Sample Models/Biology/Wolf Sheep Predation.nlogo")
+outpath <- file.path("C:/out")
+# Unix default NetLogo installation path (adjust to your needs!):
+netlogopath <- file.path("/home/NetLogo 6.0.4")
+modelpath <- file.path(netlogopath, "app/models/Sample Models/Biology/Wolf Sheep Predation.nlogo")
+outpath <- file.path("/home/out")
+
+nl <- nl(nlversion = "6.0.4",
+         nlpath = netlogopath,
+         modelpath = modelpath,
+         jvmmem = 1024)
+
+
+#################
+#--Experiment--##
+#################
+
+nl@experiment <- experiment(expname="wolf-sheep",
+                            outpath=outpath,
+                            repetition=1,
+                            tickmetrics="true",
+                            idsetup="setup",
+                            idgo="go",
+                            runtime=50,
+                            evalticks=seq(40,50),
+                            metrics=c("count sheep", "count wolves", "count patches with [pcolor = green]"),
+                            variables = list('initial-number-sheep' = list(min=50, max=150, qfun="qunif"),
+                                             'initial-number-wolves' = list(min=50, max=150, qfun="qunif")),
+                            constants = list("model-version" = "\"sheep-wolves-grass\"",
+                                             "grass-regrowth-time" = 30,
+                                             "sheep-gain-from-food" = 4,
+                                             "wolf-gain-from-food" = 20,
+                                             "sheep-reproduce" = 4,
+                                             "wolf-reproduce" = 5,
+                                             "show-energy?" = "false"))
+```
+
+## Easy, quiet
+Additionally, I feel that the package executes NetLogo very quietly (your computer isn't screaming), and  a concise syntax. I am saying this because with ![RNetLogo](http://rnetlogo.r-forge.r-project.org/), 
+
+* 
+* Animation
