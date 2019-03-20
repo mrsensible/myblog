@@ -13,34 +13,69 @@ tags:
   - raster
 ---
 
-## Overview
-* system에 설치하려는 R의 특성
-* 로컬컴퓨터에서는 적용이 용이하나 클러스터에서는 적용불가. 이유는 R이 클러스터 전체환경을 바꾸려는 시도를 하기 때문.
-* 따라서 사용자 내부환경에서 R 패키지를 설치하게 되었음.
+## HPC is not a local machine
+Today's post is all about setting R on a HPC (High Performance Computing). HPC is also named as a supercomputer because it has many nodes and GB level of memory. People who work with a large set of data or work on parallel processing commonly use the HPC.
+
+I presume most universities and research institutions have this massive system, but if you dont' have a CompSci background, haven't used the cluster before (but you are willing to), and you want to use R and spatial tools, this is a good place to start.
+
+As written on the title, HPC is not a local machine. Why does that matter? It is because R intrinsically attempts to install packages on your system directory rather than on your local account. Think about installing a new software on Windows. In a few steps, the programme wizard will tell you if you are going to install it on your own account or to include guests. We usually leave it as the default setup asks you to do (which normally includes guests) and click *Next*. As such, if you ask R to install a package, then it means that the package will be installed on the entire cluster, which is not what we expect. ~~The administrators will reject this anyway~~. Here, we introduce how to install gdal packages in our own node.
+
 
 ## Procedure
 
 * 1. Load miniconda
+We first load `Miniconda`. Miniconda allows us to create a local environment where packages can be stored. 
 ```
 module load miniconda3-4.5.4-gcc-5.4.0-hivczbz
 ```
 
-* 2. Install R in a new environment in renv2
-
+* 2. Install R in a new environment in a new folder
+Use `conda` to create a new folder *renv2*. Then use `conda` to install R.
 ```
 conda create -p renv2
 conda install R
 ```
 
 * 3. Activate R on renv2
+Once the installation has finished, input `source activate /directory/` to load your conda. You will see a new command path with parentheses.
 ```
 source activate /home/hs621/renv2
 ```
 
 * 4. Install desired R packages: sf, sp, tidyverse
+Then you can install any packages on your own node. For more package examples, please refer to the [anaconda website](https://docs.anaconda.com/anaconda/packages/r-language-pkg-docs/).
 ```
 conda install -p /home/hs621/renv2  R r-sf r-sp
 ```
 
+* 5. Test run
+If your packages are installed successfully and your R script is ready to run, then you can use `nice Rscript` to run your script. If you encounter any error messages, then it will be best to execute R and solve the issue and come back to the test mode.
 
+* 6. Batch script
+Here is an part example of my script. If you want to run a batch script, please make sure you have loaded all the softwares and platforms to prevent errors.
+
+```
+#! Name of the job:
+#SBATCH -J nlrx
+#! Which project should be charged:
+#SBATCH -A XXXX-SL3-CPU
+#! How many whole nodes should be allocated?
+#SBATCH --nodes=1
+#! How many (MPI) tasks will there be in total? (<= nodes*32)
+#! The skylake/skylake-himem nodes have 32 CPUs (cores) each.
+#SBATCH --mem=55555
+#! How much wallclock time will be required?
+#SBATCH --time=12:00:00
+#! What types of email messages do you wish to receive?
+#SBATCH --mail-type=END
+#! Uncomment this to prevent the job from being requeued (e.g. if
+#! interrupted by node failure or system downtime):
+##SBATCH --no-requeue
+
+module load r-3.5.2-gcc-5.4.0-3dwh3g2
+module load netlogo/6.0.4
+module load miniconda3-4.5.4-gcc-5.4.0-hivczbz
+source activate /home/hs621/renv2
+module load jdk-8u141-b15-gcc-5.4.0-p4aaopt
+```
 
