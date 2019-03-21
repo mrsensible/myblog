@@ -295,6 +295,12 @@
           </a>
         </li>
       
+        <li>
+          <a href="#things-to-remember">
+            Things to remember
+          </a>
+        </li>
+      
     </ol>
   </nav>
 
@@ -307,49 +313,38 @@
 <h2>HPC is not a local machine</h2>
 <p>Today’s post is all about setting R on a HPC (High Performance Computing). HPC is also named as a supercomputer because it has many nodes and GB level of memory. People who work with a large set of data or work on parallel processing commonly use the HPC.</p>
 <p>I presume most universities and research institutions have this massive system, but if you dont’ have a CompSci background, haven’t used the cluster before (but you are willing to), and you want to use R and spatial tools, this is a good place to start.</p>
-<p>As written on the title, HPC is not a local machine. Why does that matter? It is because R intrinsically attempts to install packages on your system directory rather than on your local account. Think about installing a new software on Windows. In a few steps, the programme wizard will tell you if you are going to install it on your own account or to include guests. We usually leave it as the default setup asks you to do (which normally includes guests) and click <em>Next</em>. As such, if you ask R to install a package, then it means that the package will be installed on the entire cluster, which is not what we expect. <del>The administrators will reject this anyway</del>. Here, we introduce how to install gdal packages in our own node.</p>
+<p>As written on the title, HPC is not a local machine. Why does that matter? It is because R intrinsically attempts to install packages on your system directory rather than on your local account. Think about installing a new software on Windows. In a few steps, the programme wizard will tell you if you are going to install it on your own account or to include guests. We usually leave it as the default setup asks you to do (which normally includes guests) and click <em>Next</em>.</p>
+<p>As such, if you ask R to install a package, then it means that the package will be installed on the entire cluster, which is not what we expect. <del>The administrators will reject this anyway</del>. Here, we introduce how to install gdal packages in our own node.</p>
 </div>
 <div id="procedure" class="section level2">
 <h2>Procedure</h2>
-<ul>
-<li><ol style="list-style-type: decimal">
+<ol style="list-style-type: decimal">
 <li>Load miniconda
 We first load <code>Miniconda</code>. Miniconda allows us to create a local environment where packages can be stored.</li>
-</ol></li>
-</ul>
+</ol>
 <pre><code>module load miniconda3-4.5.4-gcc-5.4.0-hivczbz</code></pre>
-<ul>
-<li><ol start="2" style="list-style-type: decimal">
+<ol start="2" style="list-style-type: decimal">
 <li>Install R in a new environment in a new folder
 Use <code>conda</code> to create a new folder <em>renv2</em>. Then use <code>conda</code> to install R.</li>
-</ol></li>
-</ul>
+</ol>
 <pre><code>conda create -p renv2
 conda install R</code></pre>
-<ul>
-<li><ol start="3" style="list-style-type: decimal">
+<ol start="3" style="list-style-type: decimal">
 <li>Activate R on renv2
 Once the installation has finished, input <code>source activate /directory/</code> to load your conda. You will see a new command path with parentheses.</li>
-</ol></li>
-</ul>
+</ol>
 <pre><code>source activate /home/hs621/renv2</code></pre>
-<ul>
-<li><ol start="4" style="list-style-type: decimal">
+<ol start="4" style="list-style-type: decimal">
 <li>Install desired R packages: sf, sp, tidyverse
 Then you can install any packages on your own node. For more package examples, please refer to the <a href="https://docs.anaconda.com/anaconda/packages/r-language-pkg-docs/">anaconda website</a>.</li>
-</ol></li>
-</ul>
+</ol>
 <pre><code>conda install -p /home/hs621/renv2  R r-sf r-sp</code></pre>
-<ul>
-<li><ol start="5" style="list-style-type: decimal">
-<li>Test run
-If your packages are installed successfully and your R script is ready to run, then you can use <code>nice Rscript</code> to run your script. If you encounter any error messages, then it will be best to execute R and solve the issue and come back to the test mode.</li>
-</ol></li>
-<li><ol start="6" style="list-style-type: decimal">
-<li>Batch script
-Here is an part example of my script. If you want to run a batch script, please make sure you have loaded all the softwares and platforms to prevent errors.</li>
-</ol></li>
-</ul>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Test run
+If your packages are installed successfully and your R script is ready to run, then you can use <code>nice Rscript</code> to run your script. If you encounter any error messages, then it will be best to execute R and solve the issue and come back to the test mode.</p></li>
+<li><p>Batch script
+Here is an part example of my script. If you want to run a batch script, please make sure you have loaded all the softwares and platforms to prevent errors.</p></li>
+</ol>
 <pre><code>#! Name of the job:
 #SBATCH -J nlrx
 #! Which project should be charged:
@@ -372,6 +367,10 @@ module load netlogo/6.0.4
 module load miniconda3-4.5.4-gcc-5.4.0-hivczbz
 source activate /home/hs621/renv2
 module load jdk-8u141-b15-gcc-5.4.0-p4aaopt</code></pre>
+</div>
+<div id="things-to-remember" class="section level2">
+<h2>Things to remember</h2>
+<p>Spatial packages in R with an HPC is a great combo to sort out repetitive processes in a short time, although it will take a while for the setup. To conclude, remember the three processes: 1) load <code>miniconda</code>, 2) install <code>R</code> via <code>conda</code>, and 3) install packages inside the <code>conda</code> environment using the <a href="https://docs.anaconda.com/anaconda/packages/r-language-pkg-docs/">anaconda website</a>.</p>
 </div>
 
   </main>
