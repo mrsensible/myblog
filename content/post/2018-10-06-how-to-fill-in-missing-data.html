@@ -19,15 +19,23 @@ menu: ''
 
 <div id="filling-missing-data-imputation" class="section level1">
 <h1>Filling missing data = Imputation</h1>
-<p>How should we deal with missing data? Should we remove them or keep them? <br/> If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using <code>na.rm = T</code>. If not, then we need to do something to fill the gap.</p>
+<p>How should we deal with missing data? Should we remove them or keep them? <br/>
+If NA is hardly noticed in the whole dataset, we can simply ignore them in our analysis by using <code>na.rm = T</code>. If not, then we need to do something to fill the gap.</p>
 <p>In statistical terms, the process of replacing(filling) a gap is defined as <strong>imputation</strong>. There are various ways to imputate missing data, but since my focus is on time-series data, it has to at least take into account the (seasonal) trend to minimise possible errors.</p>
 <p>Before I write about the changes that I made, it might be better to describe why filling missing data, or imputation, is important for this study. In general, imputation can avoid any potential biases when we deal with sample data. While researchers in the past used to remove or ignore missing values, imputation has become trending. Many papers found that the NA values, which was thought as truly random, wasn’t actually true, particularly in time-series data where you can actually estimate what the gap might be. Nowadays, in tribute to mathematicians, we can replace <code>NA</code> values with numerical values using various approaches.<br></p>
-<p>For this study, imputation is important because the model investigates people’s exposures and responses to air pollution by an hourly period. If a missing data is not added to the model (due to repair or network error), it will not be able to consider the levels of fluctuation, especially when it is during rush hour. So filling in the gaps will surely help the measurement of people’s exposure levels that vary throughout days and seasons. <br><br></p>
-<p>The topics I will cover: 1. Exploring different methods to impute NA values 2. Transform PM<sub>10</sub> data frame for Netlogo 3. Netlogo Simulation 4. Plotting people’s health at the end of simulation</p>
+<p>For this study, imputation is important because the model investigates people’s exposures and responses to air pollution by an hourly period. If a missing data is not added to the model (due to repair or network error), it will not be able to consider the levels of fluctuation, especially when it is during rush hour. So filling in the gaps will surely help the measurement of people’s exposure levels that vary throughout days and seasons.
+<br><br></p>
+<p>The topics I will cover:
+1. Exploring different methods to impute NA values
+2. Transform PM<sub>10</sub> data frame for Netlogo
+3. Netlogo Simulation
+4. Plotting people’s health at the end of simulation</p>
 <p><em>Note there are two softwares <code>R</code> and <code>Netlogo</code> running at the same time. This will be written at the beginning of each code sections.</em></p>
 <div id="change-1-exploring-different-methods-to-impute-na-values" class="section level2">
 <h2>Change 1: Exploring different methods to impute NA values</h2>
-<p>From <code>imputeTS</code> in R (<a href="https://cran.r-project.org/web/packages/imputeTS/imputeTS.pdf" class="uri">https://cran.r-project.org/web/packages/imputeTS/imputeTS.pdf</a>), you will meet two options <em>(after some code exercise)</em> before you choose a method. <br> First option is called a <strong>Seasonally Decomposed</strong> approach (Seasonally Decomposed Missing Value Imputation,<code>na.seadec</code>), which <em>“removes the seasonal component from the time series, performs imputation on the deseasonalised series and afterwards adds the seasonal component again”</em>. <br> The other approach is <strong>Seasonally Splitted</strong> (Seasonally Splitted Missing Value Imputation, <code>na.seasplit</code>), which <em>“splits the times series into seasons and afterwards performs imputation separately for each of the resulting time series datasets (each containing the data for one specific season)”</em>.<br><br> Now you will find four different methods in each approaches tabled below:</p>
+<p>From <code>imputeTS</code> in R (<a href="https://cran.r-project.org/web/packages/imputeTS/imputeTS.pdf" class="uri">https://cran.r-project.org/web/packages/imputeTS/imputeTS.pdf</a>), you will meet two options <em>(after some code exercise)</em> before you choose a method. <br> First option is called a <strong>Seasonally Decomposed</strong> approach (Seasonally Decomposed Missing Value Imputation,<code>na.seadec</code>), which <em>“removes the seasonal component from the time series, performs imputation on the deseasonalised series and afterwards adds the seasonal component again”</em>. <br>
+The other approach is <strong>Seasonally Splitted</strong> (Seasonally Splitted Missing Value Imputation, <code>na.seasplit</code>), which <em>“splits the times series into seasons and afterwards performs imputation separately for each of the resulting time series datasets (each containing the data for one specific season)”</em>.<br><br>
+Now you will find four different methods in each approaches tabled below:</p>
 <table>
 <thead>
 <tr class="header">
@@ -79,7 +87,8 @@ menu: ''
 </tr>
 </tbody>
 </table>
-<p>Personally, I found the <strong>seasonally splitted</strong> approach quite useful because pollution shows a clear seasonal trend, thus it may take less risk to fit in values. Using the other approach might give you a overall trend, but will smooth out the instantaneous rise in each hour which is very important. <br><br></p>
+<p>Personally, I found the <strong>seasonally splitted</strong> approach quite useful because pollution shows a clear seasonal trend, thus it may take less risk to fit in values. Using the other approach might give you a overall trend, but will smooth out the instantaneous rise in each hour which is very important.
+<br><br></p>
 <p>Now, I will compare four different methods that will impute the <code>NA</code> values in Seoul monitoring stations. Out of 6 years, I sampled February 2012 because no data was shown in the entire month! Lets have a look at the outcomes:</p>
 <p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/139313330@N06/43763952305/in/dateposted-public/" title="Sample-imputation"><img src="https://farm2.staticflickr.com/1900/43763952305_fee3f9afd8_b.jpg" width="500" height="500" alt="Sample-imputation"></a></p>
 <p>Even if you haven’t looked at the equations, you can roughly guess how it is measured. But because I couldn’t find any preferences out of the results, I thought it might be better to import them all. <br><br></p>
@@ -507,7 +516,9 @@ menu: ''
      if ticks &gt; 0 and ticks mod 2 = 0       [set ts__kal item (3 + random 11) table:get ts_kal ticks + 1] ; work
     ]
   ]</code></pre>
-<p>As a result, you may see the bottom four values in the attribution box. <a data-flickr-embed="true"  href="https://www.flickr.com/photos/139313330@N06/29805440067/in/dateposted-public/" title="netlogo-interface"><img src="https://farm2.staticflickr.com/1874/29805440067_f0b13dc865_b.jpg" width="724" height="408" alt="netlogo-interface"></a> <br><br></p>
+<p>As a result, you may see the bottom four values in the attribution box.
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/139313330@N06/29805440067/in/dateposted-public/" title="netlogo-interface"><img src="https://farm2.staticflickr.com/1874/29805440067_f0b13dc865_b.jpg" width="724" height="408" alt="netlogo-interface"></a>
+<br><br></p>
 </div>
 <div id="change-4-plotting-peoples-health-at-the-end-of-simulation" class="section level2">
 <h2>Change 4: Plotting people’s health at the end of simulation</h2>
@@ -595,7 +606,8 @@ menu: ''
 </tr>
 </tbody>
 </table>
-<p>and some plots… <br></p>
+<p>and some plots…
+<br></p>
 <table>
 <thead>
 <tr class="header">
