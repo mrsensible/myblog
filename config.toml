@@ -16,10 +16,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", ".DS_Store"]
   quality = 99
 
 [params]
-  description = "Geography and Coffee. *Currently @UK*. <br> Words are my own"
+  description = "Maps, files, and codes. *Currently @UK*. <br> Words are my own"
   footer = "Works under the MIT License. Hyesop 2019."
   # For more date formats see https://gohugo.io/functions/format/
-  dateFormat = "2006-01-01"
+  dateFormat = "2020-01-01"
   codePenUser = "someUser"
 
 [menu]
