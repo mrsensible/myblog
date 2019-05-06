@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Geographer In Nature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Best Reproducable Map competition @GISRUK2019</title>
+      <link>/2019-04-25-best-reproducable-map-competition-at-gisruk2019-conference/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019-04-25-best-reproducable-map-competition-at-gisruk2019-conference/</guid>
+      <description>Just before the GISRUK2019 conference, a mapping competition was announced by Robin Lovelace who was one of the instructors in the Spatial data in R workshop. I was keen on participating this competition because I use R and GIS for my PhD project, and there were some outcomes that I could use for the challenge. However, my confidence slowly diminished after I spotted the title Reproducable after the Best. What does this mean?</description>
+    </item>
     
     <item>
       <title>nlrx - The best R package for running NetLogo simulation</title>
