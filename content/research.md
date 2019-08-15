@@ -10,7 +10,8 @@ My research mainly stands on the quantitative side of geography. This includes m
 <br>
 
 ### Main research interests include:
-{{% ticks %}}
+
+
 * Agent-based modelling
 * GIS
 * Machine learning
@@ -19,7 +20,7 @@ My research mainly stands on the quantitative side of geography. This includes m
 * Big Data
 * Urban Air Pollution
 * Urban Analytics
-{{% /ticks %}}
+
 
 <br><br>
 

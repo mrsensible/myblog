@@ -6,28 +6,10 @@
     <description>Recent content in Tags on Geographer In Nature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hpc</title>
-      <link>/tags/hpc/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/hpc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Imputation</title>
-      <link>/tags/imputation/</link>
-      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/imputation/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Kriging</title>
@@ -35,60 +17,6 @@
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/kriging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Netlogo</title>
-      <link>/tags/netlogo/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/netlogo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nlrx</title>
-      <link>/tags/nlrx/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/nlrx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pollution</title>
-      <link>/tags/pollution/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/pollution/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Spatial</title>
-      <link>/tags/r-spatial/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r-spatial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Raster</title>
-      <link>/tags/raster/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/raster/</guid>
       <description></description>
     </item>
     
@@ -102,7 +30,70 @@
     </item>
     
     <item>
-      <title>Sf</title>
+      <title>pollution</title>
+      <link>/tags/pollution/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pollution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NetLogo</title>
+      <link>/tags/netlogo/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/netlogo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nlrx</title>
+      <link>/tags/nlrx/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nlrx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HPC</title>
+      <link>/tags/hpc/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r-spatial</title>
+      <link>/tags/r-spatial/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r-spatial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raster</title>
+      <link>/tags/raster/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/raster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sf</title>
       <link>/tags/sf/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -111,7 +102,16 @@
     </item>
     
     <item>
-      <title>Tips</title>
+      <title>Imputation</title>
+      <link>/tags/imputation/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/imputation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
       <link>/tags/tips/</link>
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -120,7 +120,7 @@
     </item>
     
     <item>
-      <title>Zeros</title>
+      <title>zeros</title>
       <link>/tags/zeros/</link>
       <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
       
