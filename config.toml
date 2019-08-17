@@ -32,7 +32,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", ".DS_Store"]
     url = "/research"
     weight = 2
   [[menu.nav]]
-    name = "Redirect"
+    name = "Blog"
     url = "/redirect"
     weight = 3
   [[menu.nav]]
