@@ -12,39 +12,56 @@ output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-#library(devtools)
-#install_github("basilesimon/noaastorms")
-library(noaastorms)
-library(tidyverse)
+knitr::opts_chunk$set(echo = T)
 ```
 
 ## How to install noaa package?
-https://i0.wp.com/www.ssd.noaa.gov/PS/TROP/TCFP/images/TCFP_basins.gif?w=456&ssl=1
-```{r}
+
+
+
+```{r packages}
 #library(devtools)
 #install_github("basilesimon/noaastorms")
 library(noaastorms)
 library(tidyverse)
-# load a map of the world and
-# use `clipPolys` to avoid issues
-# when zooming in with `coord_map`
+library(PBSmapping)
+library(lubridate)
+library(mapproj)
+library(maps)
 
 wm <- map_data("world")
-library(PBSmapping)
 data.table::setnames(wm, c("X","Y","PID","POS","region","subregion"))
 worldmap <- clipPolys(wm,
                       xlim=c(100,160),ylim=c(0, 60),
                       keepExtra=TRUE)
 
+head(worldmap)
+
 ```
+
+## Choose East Asia
+
+![](https://i0.wp.com/www.ssd.noaa.gov/PS/TROP/TCFP/images/TCFP_basins.gif?w=456&ssl=1)
+
+```{r eval=FALSE}
+spStorms <- getStorms('WP')
+```
+
 
 ## Specify dates
 
 ```{r}
 dateRange <- c(as.Date('2017-01-01'), as.Date('2018-12-31'))
-spStorms <- getStorms('WP', dateRange = dateRange)
+spStorms <- getStorms('WP', dateRange = dateRange) %>% 
+            mutate(year = as.factor(year(ISO_TIME)))
 
+
+```
+
+
+## Plot map
+
+```{r}
 spStorms %>% 
   ggplot(aes(x = LON, y = LAT, group = SID)) + 
   geom_polygon(data = worldmap,
@@ -53,10 +70,8 @@ spStorms %>%
                colour = "gray10",
                size = 0.2) +
   ggtitle("Typhoons at the West Pacific \n 2017-2018") +
-  geom_path(alpha = 0.1, size = 0.8, color = "red") +
+  geom_path(alpha = 0.7, size = 0.8, aes(color = year)) +
   coord_map(xlim=c(100,160), ylim = c(0, 60))
 
 ```
-
-
 
