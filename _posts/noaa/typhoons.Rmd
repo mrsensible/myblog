@@ -1,0 +1,62 @@
+---
+title: "Typhoons in East Asia"
+description: |
+  Supported by {noaastorms} package.
+author:
+  - name: Hyesop Shin 
+    url: https://hyesop.rbind.io
+    #affiliation: Spacely Sprockets
+    #affiliation_url: https://example.com/spacelysprokets
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+#library(devtools)
+#install_github("basilesimon/noaastorms")
+library(noaastorms)
+library(tidyverse)
+```
+
+## How to install noaa package?
+https://i0.wp.com/www.ssd.noaa.gov/PS/TROP/TCFP/images/TCFP_basins.gif?w=456&ssl=1
+```{r}
+#library(devtools)
+#install_github("basilesimon/noaastorms")
+library(noaastorms)
+library(tidyverse)
+# load a map of the world and
+# use `clipPolys` to avoid issues
+# when zooming in with `coord_map`
+
+wm <- map_data("world")
+library(PBSmapping)
+data.table::setnames(wm, c("X","Y","PID","POS","region","subregion"))
+worldmap <- clipPolys(wm,
+                      xlim=c(100,160),ylim=c(0, 60),
+                      keepExtra=TRUE)
+
+```
+
+## Specify dates
+
+```{r}
+dateRange <- c(as.Date('2017-01-01'), as.Date('2018-12-31'))
+spStorms <- getStorms('WP', dateRange = dateRange)
+
+spStorms %>% 
+  ggplot(aes(x = LON, y = LAT, group = SID)) + 
+  geom_polygon(data = worldmap,
+               aes(x = X, y = Y, group = PID), 
+               fill = "whitesmoke",
+               colour = "gray10",
+               size = 0.2) +
+  ggtitle("Typhoons at the West Pacific \n 2017-2018") +
+  geom_path(alpha = 0.1, size = 0.8, color = "red") +
+  coord_map(xlim=c(100,160), ylim = c(0, 60))
+
+```
+
+
+

@@ -1,0 +1,28 @@
+---
+title: "The grass rules in Cambridge"
+#description: |
+#  A new article created using the Distill format.
+author:
+  - name: Hyesop 
+    #url: https://example.com/norajones
+    #affiliation: Spacely Sprockets
+    #affiliation_url: https://example.com/spacelysprokets
+date: "2019-02-20"
+output: distill::distill_article
+---
+
+![](thegrassrules.jpg)
+
+This picture was taken on the 31st of July 2018 at [Downing College](http://www.dow.cam.ac.uk/). Do you see anything other than the yellowy grass? Well here is the hint: <br>
+* The man with the white shirt is walking furiously towards the men.
+* The white shirt man is the porter of the college
+* The men are tourists
+
+
+Yes, this is actually a scary situation to Cambridgians because only 1) fellows, 2) people talking to a fellow, 3) gardener including gardening robots, and 4) ducks are allowed to walk on college grass.
+
+So, I would encourage tourists to read the [dos and don'ts](https://www.businessinsider.com/what-to-know-before-starting-at-the-university-of-cambridge-2016-9?r=US&IR=T) before coming, otherwise you will porters yelling at you!
+
+
+
+

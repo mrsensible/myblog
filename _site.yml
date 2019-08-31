@@ -12,5 +12,5 @@ navbar:
     - text: "Research"
       href: research.html  
     - text: "Blog"
-      href: https://geolens.rbind.io  
+      href: blog.html  
 output: distill::distill_article
