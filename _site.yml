@@ -1,0 +1,14 @@
+name: "myblog"
+title: "Geographer in Nature"
+description: |
+  Welcome to Hyesop Shin's Website
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Blog"
+      href: https://geolens.rbind.io  
+output: distill::distill_article
