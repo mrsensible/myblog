@@ -12,7 +12,6 @@ My research mainly stands on the quantitative side of geography. This includes m
 My main research interests include: <br>
  - Agent-based modelling <br>
  - GIS <br>
- ~~- Machine learning~~ <br>
  - Nonlinear Statistics <br>
  - Spatial Statistics <br>
  - Big Data <br>
@@ -21,7 +20,7 @@ My main research interests include: <br>
 
 
 ### Ph.D Research: Assessing Seoul Pedestrian's Exposure to Air Pollution using Agent-based Modelling
-![](images/seoul.jpg)
+![](images/seoul.jpg){width=20% .external}
 
 My PhD research aims to estimate the potential health vulnerability to air pollution in megacities, particularly in Seoul. Since Seoul is one of the densest cities in the world, citizens are more likely to be exposed to a large amounts of pollutants generated from industrial sites, vehicle emission, and harmful substances flowing from other areas, which in turn can cause lung and cardiovascular disorders. My other concern is how individual activities and their socioeconomic status can be affected by pollution exposure. For instance, residents near pollutant areas are more likely to be affected and also socially deprived.
 
