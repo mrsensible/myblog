@@ -10,7 +10,16 @@ navbar:
     - text: "About"
       href: about.html
     - text: "Research"
-      href: research.html  
+      menu:
+      - text: "Current research"
+        href: research.html
+      - text: "-------"
+      - text: "Foot-and-Mouth Disease"
+        href: ABM0.html  
+      - text: "Delineating mountainous areas"
+        href: ABM1.html    
+    - text: "CV"
+      href: CV.html
     - text: "Blog"
       href: blog.html  
 output: distill::distill_article

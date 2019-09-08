@@ -1,0 +1,45 @@
+---
+title: "Agent-based Modelling: The beginning"
+description: |
+  How I simulated Foot-and-mouth disease with ABM
+output: distill::distill_article
+---
+
+
+# Model
+
+[Click here to to play](netlogo-models/FMD_Korea.html)
+
+
+# Purpose
+
+This is my first ABM model that I built for my master's thesis *(This model wouldn't have been born had it not been my colleague's help)*. This article examined the impact of spatial interaction factors between agents and environment of FMD transmission based on ABM. Here is a narrative-type interpretation of this model.
+
+
+# Agents
+
+Agents are largely divided into active agents and fixed agents. 
+
+* Active agents: 
+    * Cattle
+    * Pigs
+    * Trucks
+
+* Fixed agents: 
+    * Road 
+    * Vaccination
+
+
+# Assumptions
+
+To construct agent-based model, some assumptions are descripted as follows. First, all animals’ birth and elimination is not considered (S+E+I+R = N = constant). Second, each animal has the same infection rate. Third, infection rate is 60% (Eblé et al. 2006) in radius 1.
+
+* Agents within livestock move in random space, while trucks only move on roads. 
+* Infected animals can transmit virus to vehicles.
+* FMD virus has a latency period from 2 to 14 days (140 ticks in model).
+*	Livestock can be chosen, from 1 to 30. An infected animal exists on the chosen livestock.
+*	There are six vaccine patches. If this operates, it has 50 percent probability of treatment (KAHIS 2013).
+*	To control highway effect, select either “highway” or “road” for speed change.
+* Emergence of a new virus is determined to 30% in overall population after initial outbreak (Del Valle, Mniszewski, and Hyman 2013).
+
+

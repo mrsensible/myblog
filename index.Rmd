@@ -1,7 +1,7 @@
 ---
 title: "Geographer in Nature"
 description: |
-  Welcome to Hyesop's website!
+  뼛속까지 지리학과: Welcome to Hyesop's website!
 site: distill::distill_website
 ---
 
@@ -9,5 +9,6 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Hello there! Thank you for visiting my website. This site contains my personal information and my miscellaneous interests. Should you have any questions, please let me know via my email shinhyesop@gmail.com. 
+Hello there! Thank you for visiting my website. This site contains my personal information and my miscellaneous interests. Should you have any questions, please let me know via twitter [@hyesop](https://twitter.com/hyesop) or shinhyesop@gmail.com. 
 
+![](images/cover.png)

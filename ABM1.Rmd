@@ -1,0 +1,7 @@
+---
+title: "Delineating mountainous areas with ABM"
+description: |
+  How mountainous areas can be detected with an ABM approach
+output: distill::distill_article
+---
+
