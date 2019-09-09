@@ -15,9 +15,9 @@ navbar:
         href: research.html
       - text: "-------"
       - text: "Foot-and-Mouth Disease"
-        href: ABM0.html  
+        #href: ABM0.html  
       - text: "Delineating mountainous areas"
-        href: ABM1.html    
+        #href: ABM1.html    
     - text: "CV"
       href: CV.html
     - text: "Blog"
