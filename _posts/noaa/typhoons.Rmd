@@ -1,9 +1,9 @@
 ---
-title: "Typhoons in East Asia"
+title: "Typhoons in East Asia (KR)"
 description: |
   Supported by {noaastorms} package.
 author:
-  - name: Hyesop Shin 
+  - name: Hyesop Shin 신혜섭
     url: https://hyesop.rbind.io
     #affiliation: Spacely Sprockets
     #affiliation_url: https://example.com/spacelysprokets
@@ -14,6 +14,11 @@ output: distill::distill_article
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = T)
 ```
+
+## 태풍에 관한 패키지가 나왔다는게 사실인가요?
+네 맞습니다. `R`의 `noaastorms`패키지가 8월경에 출시되었는데요 이제 `R`로 NOAA 영상의 가장 최신버전인 NOAA IBTrACS v4를 만나실 수 있습니다. 
+
+사실 최근까지도 태풍이 불 정도로 한반도의 태풍의 영향은 엄청났었는데요, 실제로 얼마나 많은 태풍이 한반도 근방을 지나갔고 그 위력은 어느정도인지 정말 궁금했습니다.
 
 ## How to install noaa package?
 
