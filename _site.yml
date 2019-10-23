@@ -20,6 +20,10 @@ navbar:
         #href: ABM1.html    
     - text: "CV"
       href: CV.html
+    - text: "Tour"
+      menu:
+      - text: "Cambridge (2019)"
+        href: Cambridge_Tour.html  
     - text: "Blog"
       href: blog.html  
 output: distill::distill_article
