@@ -12,7 +12,7 @@
     "date": "2019-09-14",
     "categories": [],
     "preview": "posts/noaa/distill-preview.png",
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:35+01:00"
   },
   {
     "path": "posts/bristol/",
@@ -27,7 +27,7 @@
     "date": "2019-08-15",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:34+01:00"
   },
   {
     "path": "posts/gisruk2019/",
@@ -42,7 +42,7 @@
     "date": "2019-04-25",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:34+01:00"
   },
   {
     "path": "posts/seoul_ap/",
@@ -57,7 +57,7 @@
     "date": "2019-04-01",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:35+01:00"
   },
   {
     "path": "posts/nlrx/",
@@ -75,7 +75,7 @@
       "NetLogo"
     ],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:35+01:00"
   },
   {
     "path": "posts/gdal_packages/",
@@ -94,7 +94,7 @@
       "rspatial"
     ],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:34+01:00"
   },
   {
     "path": "posts/grassrules/",
@@ -109,7 +109,7 @@
     "date": "2019-02-20",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:34+01:00"
   },
   {
     "path": "posts/missing_data/",
@@ -128,7 +128,7 @@
       "tips"
     ],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:35+01:00"
   },
   {
     "path": "posts/Leading_zeros/",
@@ -145,6 +145,6 @@
       "R:Tips"
     ],
     "preview": {},
-    "last_modified": "2019-09-14T19:49:14+01:00"
+    "last_modified": "2019-09-16T22:51:34+01:00"
   }
 ]
