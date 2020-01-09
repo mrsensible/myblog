@@ -8,7 +8,7 @@ output: distill::distill_article
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-#library(tidyverse)
+library(tidyverse)
 library(sf)
 library(mapview)
 ```
@@ -30,3 +30,24 @@ mapview(seoulCBD["X02hr"], col.regions = sf.colors(10)) +
   mapview(seoulCBD["X22hr"], col.regions = sf.colors(10))
 
 ```
+
+
+## Data at a Glance
+
+```{r, results='asis'}
+seoulCBD <- read.csv("seoulCBD.csv") %>% na.omit() %>% mutate_if(is.numeric, round,2)
+
+DT::datatable(
+  seoulCBD, extensions = 'FixedColumns',
+  options = list(
+  dom = 't',
+  scrollX = TRUE,
+  scrollCollapse = TRUE
+ ))
+
+#knitr::kable(seoulCBD, format = "html")
+```
+
+
+
+
