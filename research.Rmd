@@ -1,7 +1,5 @@
 ---
 title: "Research"
-description: |
-  Hyesop's Research
 ---
 
 My research mainly stands on the quantitative side of geography. This includes miscellaneous GIS approaches, geostatistics (i.e. clustering, spatial autocorrelation), and agent-based modelling. The topics I worked on through my academic path varied from aquatic ecosystem, disease to urban transport, but my recent attention has lied on human-environment interaction, in a pollution context: how air pollution and urbanisation can make people and communities physically and socioeconomically vulnerable.

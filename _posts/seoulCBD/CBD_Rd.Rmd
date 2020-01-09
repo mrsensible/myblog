@@ -1,0 +1,23 @@
+---
+title: "Road Speed in Seoul CBD area"
+author:
+  - name: Hyesop Shin
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(sf)
+library(mapview)
+```
+
+##
+
+
+```{r sf}
+seoulCBD <- st_read("seoulCBD.shp")
+mapview(seoulCBD["Average"], col.regions = sf.colors(10))
+
+```
