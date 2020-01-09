@@ -8,16 +8,25 @@ output: distill::distill_article
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-library(tidyverse)
+#library(tidyverse)
 library(sf)
 library(mapview)
 ```
 
-##
+## Average Estimated Speed in Seoul CBD area 2018
+### Overall
+```{r average, message=FALSE, warning = FALSE}
+invisible(capture.output(seoulCBD <- st_read("seoulCBD.shp")))
+mapview(seoulCBD["Average"], col.regions = sf.colors(10)) 
+```
 
+### By selected hours
 
-```{r sf}
-seoulCBD <- st_read("seoulCBD.shp")
-mapview(seoulCBD["Average"], col.regions = sf.colors(10))
+```{r hours, message=FALSE, warning = FALSE}
+mapview(seoulCBD["X02hr"], col.regions = sf.colors(10)) + 
+  mapview(seoulCBD["X08hr"], col.regions = sf.colors(10)) +
+  mapview(seoulCBD["X12hr"], col.regions = sf.colors(10)) +
+  mapview(seoulCBD["X18hr"], col.regions = sf.colors(10)) +
+  mapview(seoulCBD["X22hr"], col.regions = sf.colors(10))
 
 ```
