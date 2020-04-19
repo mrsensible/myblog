@@ -218,26 +218,25 @@ knitr::include_graphics("images/eagle1.jpg")
 
 ## Great St.Mary’s 교회
 케임브리지 대학의 Great St. Mary 교회는 11 세기에 지어진 건물이다.
-이곳은 에라스무스, 크랜머, 리들리, 라티머 같은 종교개혁자들이 설교한 곳이기도 하다. 이 교회는 한때 비국교도인 청교도와 영국 국교회의 전쟁터 같은 곳이기도 했다.
+보통 영국의 Parish 교회 이름앞에 성 마리아 교회는 많이 봤어도 Great이 이름붙는 경우는 극히 드물다. 
+여러가지 이유가 존재하지만 가장 유력한 설은  1km 근방에 있는 Little St.Mary와 구분짓기 위함이고, 13세기부터 대학교회의 기능을 담당했기 때문이라고 한다.
+여기 사람들은 GSM으로 줄여 부르기도 한다.
+
+
+GSM은 에라스무스, 크랜머, 리들리, 라티머 같은 종교개혁자들이 설교한 곳이기도 하다. 
+이 교회는 한때 비국교도인 청교도와 영국 국교회의 전쟁터 같은 곳이기도 했다.
 청교도 올리버 크롬웰(케임브리지 시드니 써섹스 대학 출신)이 이끄는 시민혁명기간에 케임브리지 시민들 대부분은 크롬웰의 군대를 지지했지만, 대학의 학자들은 차알스 1세 왕을 지지했기에 그 두 세력간의 충돌은 불가피 했다고 전해진다. 그 이유는 St. Mary 교회가 지역주민들이 다니는 교구 교회이기도 한 반면, 동시에 대학교회였기 때문이었다.
 크롬웰의 군대는 국교회의 기도 예식서를 찢기도 했고, 스테인드 글라스를 제거하고, 강대상을 중심에 갖다 놓기도 했다. 이것은 왕과 영국국교회를 지지하는 학자들의 반발을 사기도 해서 충돌이 자주 일어났던 것이다.
 
 
-영국에서 지명 간 거리를 측정하는 기준점(Datum Point)이 처음 세워진 곳이 바로 Great St.Mary 교회이다.
-
-It is unusual for parish churches to have two organs
-The ￣ from which the first English milestones were measured in 1732.
-15세기 올드 스쿨스가 지어지기까지 학장과 펠로들은 여기서 회의를 하곤 했음
+GSM은 지리학적으로도 매우 상징적인 의미를 지닌다.
+영국에서 지명 간 거리를 측정하는 기준점(Datum Point)이 처음 세워진 곳이었기 때문이다.
+다시 말하면, 도량형이 제정되지 않았을 시절에는 거리측정은 사람의 감각에 따라 이루어 졌을 것이다. 그러나 케임브리지가 어떤 도시인가. 과학자들의 도시가 아닌가. 학자의 도시를 입증하듯 1732년 GSM에서부터 중요건물까지 거리측정을 실시하게 되고, 이는 교회 앞 메탈로 된 조감도에 새겨져 있다.
 
 
+끝으로 GSM에서 울려나오는 종소리를 기억할 필요가 있다. 종소리는 1516년부터 울리기 시작했고, 주로 헨델의 메시아에서 나오는 [내 구주 살아계심을(I know that my redeemer liveth)](https://youtu.be/uwStoHPTFuY)이 온 시내에 가득 울려 퍼졌었다.
+이후, Trinity Hall의 법학교수 조셉 조웨트 목사님은 Cambridge Quarters를 작곡하였고, 이는 오늘날 Big Ben에서 울리는 Westminster Chimes의 모태가 되었다.
 
-
-
-### 종소리
-* There has been bell-ringing since 1516
-* 헨델의 메시아에서 나오는 내 구주 살아계심을 (I know that my redeemer liveth) 종탑에서 울림
-* 웨스트민스터 차임: trinity hall 법학교수 조셉 조웨트 목사
-* ‘Cambridge Quarters’ were the model for the ‘Westminster chimes’ of Big Ben which ring out worldwide.
 
 
 ## Gonville & Caius
