@@ -1,5 +1,5 @@
 ---
-title: "케임브리지 한인교회 투어 (2019) - 눈을 떠요"
+title: "케임브리지 시내 관광"
 #description: |
 
 author:
@@ -22,8 +22,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 금일 관광일정은 다음과 같습니다.
 
-* 관광 소요시각: 2-3시간
-* 관광 장소: 코퍼스 시계, 이글 펍, 렌 도서관, 곤빌 앤 키즈, 트리니티, 세인트 존스
+* 관광 소요시각: 2-3시간 (20인 이상 관광기준)
+* 관광 장소: 코퍼스 시계 (Corpus Clock), 이글 펍 (The Eagle Pub), 렌 도서관 (Wren Library), 곤빌 앤 키즈 (Gonville and Caius), 트리니티 (Trinity), 세인트 존스 (St. Johns)
 
 
 ### **What to look at?**
@@ -43,7 +43,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 지도
 
-지도는 다음과 같습니다.
+지도는 다음과 같습니다. 보시는 바와 같이 케임브리지 시내는 30분 도보로 끝에서 도보로 끝에서 끝까지 갈수있을 정도로, 매우 좁고 밀집되어 있습니다. 거의 방사선 형태라고 생각하시면 되겠습니다. 저희는 코퍼스 시계 앞에서 만납니다. 시계가 눈에 잘 띄어서 찾기도 쉽고 골목사거리가 만나는 지점이어서 일찍오신 분들을 만나기도 편합니다 ^^
 
 
 ```{r map}
@@ -221,8 +221,12 @@ knitr::include_graphics("images/eagle1.jpg")
 이곳은 에라스무스, 크랜머, 리들리, 라티머 같은 종교개혁자들이 설교한 곳이기도 하다. 이 교회는 한때 비국교도인 청교도와 영국 국교회의 전쟁터 같은 곳이기도 했다.
 청교도 올리버 크롬웰(케임브리지 시드니 써섹스 대학 출신)이 이끄는 시민혁명기간에 케임브리지 시민들 대부분은 크롬웰의 군대를 지지했지만, 대학의 학자들은 차알스 1세 왕을 지지했기에 그 두 세력간의 충돌은 불가피 했다고 전해진다. 그 이유는 St. Mary 교회가 지역주민들이 다니는 교구 교회이기도 한 반면, 동시에 대학교회였기 때문이었다.
 크롬웰의 군대는 국교회의 기도 예식서를 찢기도 했고, 스테인드 글라스를 제거하고, 강대상을 중심에 갖다 놓기도 했다. 이것은 왕과 영국국교회를 지지하는 학자들의 반발을 사기도 해서 충돌이 자주 일어났던 것이다.
+
+
+영국에서 지명 간 거리를 측정하는 기준점(Datum Point)이 처음 세워진 곳이 바로 Great St.Mary 교회이다.
+
 It is unusual for parish churches to have two organs
-The datum point from which the first English milestones were measured in 1732.
+The ￣ from which the first English milestones were measured in 1732.
 15세기 올드 스쿨스가 지어지기까지 학장과 펠로들은 여기서 회의를 하곤 했음
 
 
