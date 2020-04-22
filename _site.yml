@@ -26,4 +26,7 @@ navbar:
         href: Cambridge_Tour.html  
     - text: "Blog"
       href: blog.html  
-output: distill::distill_article
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
