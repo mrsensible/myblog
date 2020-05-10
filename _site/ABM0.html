@@ -19,14 +19,14 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Geographer in Nature: Agent-based Modelling: The beginning</title>
+  <title>Geographer in Nature: Agent-based Modelling: The beginning (In Korean)</title>
   
   <meta property="description" itemprop="description" content="How I simulated Foot-and-mouth disease with ABM"/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Geographer in Nature: Agent-based Modelling: The beginning"/>
+  <meta property="og:title" content="Geographer in Nature: Agent-based Modelling: The beginning (In Korean)"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="How I simulated Foot-and-mouth disease with ABM"/>
   <meta property="og:locale" content="en_US"/>
@@ -34,14 +34,14 @@
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Geographer in Nature: Agent-based Modelling: The beginning"/>
+  <meta property="twitter:title" content="Geographer in Nature: Agent-based Modelling: The beginning (In Korean)"/>
   <meta property="twitter:description" content="How I simulated Foot-and-mouth disease with ABM"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Agent-based Modelling: The beginning"]},{"type":"character","attributes":{},"value":["How I simulated Foot-and-mouth disease with ABM\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Agent-based Modelling: The beginning (In Korean)"]},{"type":"character","attributes":{},"value":["How I simulated Foot-and-mouth disease with ABM\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1272,7 +1272,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Agent-based Modelling: The beginning","description":"How I simulated Foot-and-mouth disease with ABM","authors":[]}
+{"title":"Agent-based Modelling: The beginning (In Korean)","description":"How I simulated Foot-and-mouth disease with ABM","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1294,7 +1294,7 @@ Research
 <div class="nav-dropdown-content">
 <a href="research.html">Current research</a>
 <hr/>
-<span class="nav-dropdown-header">Foot-and-Mouth Disease</span>
+<a href="ABM0.html">Foot-and-Mouth Disease</a>
 <span class="nav-dropdown-header">Delineating mountainous areas</span>
 </div>
 </div>
@@ -1319,7 +1319,7 @@ Tour
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Agent-based Modelling: The beginning</h1>
+<h1>Agent-based Modelling: The beginning (In Korean)</h1>
 <p>How I simulated Foot-and-mouth disease with ABM</p>
 </div>
 
@@ -1328,43 +1328,33 @@ Tour
 <h3 class="d-toc-header">Table of Contents</h3>
 <nav class="d-toc" id="TOC">
 <ul>
-<li><a href="#model">Model</a></li>
-<li><a href="#purpose">Purpose</a></li>
-<li><a href="#agents">Agents</a></li>
-<li><a href="#assumptions">Assumptions</a></li>
+<li><a href="#초기화면">초기화면</a></li>
+<li><a href="#배경">배경</a></li>
+<li><a href="#실험의-가정">실험의 가정</a></li>
+<li><a href="#실험1-축산농장-내-가축의-밀도">실험1: 축산농장 내 가축의 밀도</a></li>
+<li><a href="#실험2-기온의-영향">실험2: 기온의 영향</a></li>
+<li><a href="#실험3-살균소독의-효과">실험3: 살균소독의 효과</a></li>
+<li><a href="#마무리">마무리</a></li>
 </ul>
 </nav>
 <hr class="d-toc-separator"/>
-<h1 id="model">Model</h1>
+<h1 id="초기화면">초기화면</h1>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/FMD.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
 <p><a href="netlogo-models/FMD_Korea.html">Click here to to play</a></p>
-<h1 id="purpose">Purpose</h1>
-<p>This is my first ABM model that I built for my master’s thesis <em>(This model wouldn’t have been born had it not been my colleague’s help)</em>. This article examined the impact of spatial interaction factors between agents and environment of FMD transmission based on ABM. Here is a narrative-type interpretation of this model.</p>
-<h1 id="agents">Agents</h1>
-<p>Agents are largely divided into active agents and fixed agents.</p>
-<ul>
-<li>Active agents:
-<ul>
-<li>Cattle</li>
-<li>Pigs</li>
-<li>Trucks</li>
-</ul></li>
-<li>Fixed agents:
-<ul>
-<li>Road</li>
-<li>Vaccination</li>
-</ul></li>
-</ul>
-<h1 id="assumptions">Assumptions</h1>
-<p>To construct agent-based model, some assumptions are descripted as follows. First, all animals’ birth and elimination is not considered (S+E+I+R = N = constant). Second, each animal has the same infection rate. Third, infection rate is 60% (Eblé et al. 2006) in radius 1.</p>
-<ul>
-<li>Agents within livestock move in random space, while trucks only move on roads.</li>
-<li>Infected animals can transmit virus to vehicles.</li>
-<li>FMD virus has a latency period from 2 to 14 days (140 ticks in model).</li>
-<li>Livestock can be chosen, from 1 to 30. An infected animal exists on the chosen livestock.</li>
-<li>There are six vaccine patches. If this operates, it has 50 percent probability of treatment (KAHIS 2013).</li>
-<li>To control highway effect, select either “highway” or “road” for speed change.</li>
-<li>Emergence of a new virus is determined to 30% in overall population after initial outbreak (Del Valle, Mniszewski, and Hyman 2013).</li>
-</ul>
+<h1 id="배경">배경</h1>
+<p>구제역 대유행은 2010년 말 경북 안동에서 창궐하여 전라와 제주를 제외한 전국농장을 강타하였으며 이듬해 5월 종식되었던 사건이었습니다. 바이러스 방지책으로 감염농가에서는 부득이하게 감염동물을 살처분했으며, 조기종식을 위해 고속도로IC 및 농가주변 통과하는 모든 차량들을 대상으로 살균소독을 실시했었지요.</p>
+<h1 id="실험의-가정">실험의 가정</h1>
+<p>저는 행위자기반모형의 강점인 개인의 이동과 상호작용을 통한 시스템의 변화가 구제역의 창궐과 확산과정과 유사한 점을 주목하였고, 다양한 위험인자(Risk Factors)를 대입하여 확산속도를 비교하였다. 실험모형에서 행위자는 가축(돼지, 소), 차량이며 농장위치와 가축 두수를 무작위로 배치하였고, 전체가축 중 무작위로 선택된 한 마리의 감염으로 시작됩니다. 구제역 병원체가 사람의 옷이나 차량바퀴를 통해서도 감염된다는 역학조사에 기초하여, 차량의 이동을 통해서만 병원체가 전파된다고 가정했습니다. 이 연구는 확산유발 인자로 기온과 농장밀도를, 확산저지 인자로 살균소독을 실험하였습니다. 시간단위는 편의상 초로 설정하였습니다.</p>
+<h1 id="실험1-축산농장-내-가축의-밀도">실험1: 축산농장 내 가축의 밀도</h1>
+<p>구제역이 삽시간에 확산된 배경에는 밀집사육 방식이 주요한 원인으로 꼽힌다. 축산업계에서는 사료의 저장 및 오물관리가 가능한 장소가 제한되며, 험준한 산지지형을 피해서 짓다 보니 밀집사육은 불가피하다고 지적한다. 첫번째 실험은 농장의 면적에 변화를 주어 집단감염의 속도를 비교하는 것이다. 가상세계에서는 농장의 밀도를 조절하기 위해 동물의 두수는 고정하고 농장 30개는 밀도낮음, 농장 10개는 밀도높음 로 설정하였다. 첫 확진농장에서 전체가축이 감염되는 시간은 평균 34초가 소요되었고, 전역적 확산은 농장 밀도낮음 기준 평균 553초, 농장밀도 높음 기준 평균 277초가 소요되었다. 이처럼 감염률이 비슷해도 농장밀도의 차이에 따라 평균 2배 빠른 속도로 확산되었다.</p>
+<h1 id="실험2-기온의-영향">실험2: 기온의 영향</h1>
+<p>구제역의 확산은 기온의 영향도 컸다. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3647416/">Park et al. (2013)</a>의 연구에 따르면, 기온이 영하로 내려가고 습도가 낮은 겨울철에 바이러스의 전파가 최적상태가 된다. 더군다나 추운 날씨 속에서 무리한 진단과 방역이 어려웠을 것이므로 바이러스 확산은 걷잡을 수 없이 진행되었을 것으로 추측된다. 따라서 이번 실험은 기온이 영하3도, 영하10도 일 때 확산속도의 차이를 모의하였다. 농장밀도 낮음 기준으로 모의한 결과, 전역적 확산은 영하5도 일 때 441초, 그리고 영하10도일 때 316초만에 이루어졌다.</p>
+<h1 id="실험3-살균소독의-효과">실험3: 살균소독의 효과</h1>
+<p>살균소독은 실제로 고속도로IC나 농가주변을 지나는 일반차량까지도 했던 방법이다. 살균소독의 효과는 50%정도로 설정하였다 <a href="https://www.kahis.go.kr/home/recsroom/selectRecsroomBbsList.do?bbsFlag=law">(국가가축방역시스템)</a>. 즉, 차량에 바이러스 성분이 붙어있어도 50%의 확률로 제거한다는 것이다. 살균소독을 시행했을 때와 그렇지 않았을 때를 비교한 결과, 120-160초가 차이났다. 즉, 살균소독은 바이러스를 치료하지는 못하지만 바이러스 확산 억제제로서 백신이 개발되기 전에 활용할 최적의 카드일 수 있다.</p>
+<h1 id="마무리">마무리</h1>
+<p>이상 세 가지 실험을 통해 구제역 전역적 확산을 위험인자와 회복인자를 통해서 모의하였다. 실험변수가 독립적이 아니라 상호 영향을 주고받기 때문에 이를 해석할 때 주의가 필요하다. 즉, ‘농장밀도가 구제역 확산에 가장 큰 영향을 주는 변수이다’, 혹은 ’기온이 낮을수록 영향이 더 크다’라는 해석이 아니라, ’농장밀도가 높고 기온이 영하10도 일 때의 확산속도가 2배 더 빨랐다’라는 것이 옳다. 이 실험은 실제사례를 단순하지만 명료한 이해를 돕는다는 측면에서 ’예증모형 (Illustrative Model)’에 가깝다. 그러나 모델 구축단계에서 많은 제약조건이 부여되기 때문에 모형결과에 대한 과대해석은 금물이다 <a href="http://jasss.soc.surrey.ac.uk/22/3/6.html">(Edmonds et al., 2020)</a>.</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
