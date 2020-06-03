@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/covid19abm/",
+    "title": "코로나 바이러스와 시뮬레이션",
+    "description": "행위자기반모형이 공중보건정책에 기여할 수 있을까?",
+    "author": [
+      {
+        "name": "신혜섭",
+        "url": {}
+      }
+    ],
+    "date": "2020-06-03",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-06-03T22:29:42+01:00"
+  },
+  {
     "path": "posts/seoulCBD/",
     "title": "Road Speed in Seoul CBD area",
     "description": {},
