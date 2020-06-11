@@ -19,7 +19,7 @@ navbar:
       - text: "Delineating mountainous areas"
         #href: ABM1.html    
     - text: "CV"
-      href: CV.html
+      href: CV/Hyesop_CV_May2020.pdf
     - text: "Tour"
       menu:
       - text: "Cambridge (2019)"

@@ -12,7 +12,7 @@
     "date": "2020-06-04",
     "categories": [],
     "preview": "posts/covid19abm/distill-preview.png",
-    "last_modified": "2020-06-04T17:34:52+01:00"
+    "last_modified": "2020-06-11T07:58:02+01:00"
   },
   {
     "path": "posts/seoulCBD/",
@@ -27,7 +27,7 @@
     "date": "2020-01-09",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-01-27T14:35:15+00:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/noaa/",
@@ -42,7 +42,7 @@
     "date": "2019-09-14",
     "categories": [],
     "preview": "posts/noaa/distill-preview.png",
-    "last_modified": "2019-09-16T10:12:33+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/bristol/",
@@ -57,7 +57,7 @@
     "date": "2019-08-15",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/gisruk2019/",
@@ -72,7 +72,7 @@
     "date": "2019-04-25",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/seoul_ap/",
@@ -87,7 +87,7 @@
     "date": "2019-04-01",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:19+01:00"
   },
   {
     "path": "posts/nlrx/",
@@ -105,7 +105,7 @@
       "NetLogo"
     ],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/gdal_packages/",
@@ -124,7 +124,7 @@
       "rspatial"
     ],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/grassrules/",
@@ -139,7 +139,7 @@
     "date": "2019-02-20",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/missing_data/",
@@ -158,7 +158,7 @@
       "tips"
     ],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   },
   {
     "path": "posts/Leading_zeros/",
@@ -175,6 +175,6 @@
       "R:Tips"
     ],
     "preview": {},
-    "last_modified": "2019-09-09T10:10:56+01:00"
+    "last_modified": "2020-04-21T08:41:18+01:00"
   }
 ]
