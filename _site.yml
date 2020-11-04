@@ -1,5 +1,5 @@
 name: "myblog"
-title: "Geographer in Nature"
+title: "Geographer Meets Data"
 description: |
   Welcome to Hyesop Shin's Website
 output_dir: "_site"
@@ -19,7 +19,7 @@ navbar:
       - text: "Delineating mountainous areas"
         #href: ABM1.html    
     - text: "CV"
-      href: CV/Hyesop_CV_May2020.pdf
+      href: CV/Hyesop_CV_Nov2020.pdf
     - text: "Tour"
       menu:
       - text: "Cambridge (2019)"

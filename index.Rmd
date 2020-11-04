@@ -1,5 +1,5 @@
 ---
-title: "Geographer in Nature"
+title: "Geographer Meets Data"
 description: |
   뼛속까지 지리학과: Welcome to Hyesop's website!
 site: distill::distill_website
