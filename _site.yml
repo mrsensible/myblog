@@ -1,8 +1,9 @@
-name: "myblog"
+name: "Hyesop's Blog"
 title: "Geographer Meets Data"
 description: |
   Welcome to Hyesop Shin's Website
 output_dir: "_site"
+theme: theme.css
 navbar:
   right:
     - text: "Home"
