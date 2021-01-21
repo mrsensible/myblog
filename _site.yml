@@ -15,10 +15,10 @@ navbar:
       - text: "Current research"
         href: research.html
       - text: "-------"
+      - text: "Human Exposure to Air Pollution"
+        href: ABM1.html
       - text: "Foot-and-Mouth Disease"
         href: ABM0.html  
-      - text: "Delineating mountainous areas"
-        #href: ABM1.html    
     - text: "CV"
       href: CV/Hyesop_CV_Nov2020.pdf
     - text: "Tour"
