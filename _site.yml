@@ -20,7 +20,7 @@ navbar:
       - text: "Foot-and-Mouth Disease"
         href: ABM0.html  
     - text: "CV"
-      href: CV/Hyesop_CV_Jan2021.pdf
+      href: CV.html
     - text: "Tour"
       menu:
       - text: "Cambridge (2019)"

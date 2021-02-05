@@ -1,22 +1,5 @@
 [
   {
-    "path": "posts/2021-01-23-thematic-maps-to-test/",
-    "title": "Thematic Maps To Test",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Hyesop Shin",
-        "url": {}
-      }
-    ],
-    "date": "2021-01-23",
-    "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-01-23T21:07:01+00:00",
-    "input_file": "thematic-maps-to-test.utf8.md"
-  },
-  {
     "path": "posts/covid19abm/",
     "title": "코로나 바이러스와 시뮬레이션",
     "description": "행위자기반모형이 공중보건정책에 기여할 수 있을까?",
