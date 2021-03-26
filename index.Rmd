@@ -3,12 +3,46 @@ title: "Geographer Meets Data"
 description: |
   뼛속까지 지리학과: Welcome to Hyesop's website!
 site: distill::distill_website
+toc: false
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(fontawesome)
 ```
 
-Hello there! Thank you for visiting my website. This site contains my personal information and my miscellaneous interests. Should you have any questions, please let me know via twitter [@hyesop](https://twitter.com/hyesop) or shinhyesop@gmail.com. 
+<center>
+![H in Shanghai](images/hyesop.png){width=50% .external}
+</center>
 
-![](images/cover.png)
+Hello there! Thank you for visiting my website. 
+
+My name is Hyesop. **I am a [Research Associate](https://www.gla.ac.uk/schools/ges/staff/hyesopshin/) in the Department of Geography and Earth Sciences at Glasgow University**. 
+People who aren't Korean find my name quite difficult to pronounce; besides I don't have an English name! So here is how you can call me: Hey, Sop!
+
+
+My research mainly stands on the quantitative side of geography. This includes miscellaneous GIS approaches, geo-statistics (i.e. clustering, spatial autocorrelation), and agent-based modelling. The topics I worked on through my academic path varied from aquatic ecosystem, disease to urban transport.
+
+
+You can find out about **some** of my projects under the projects menu. 
+
+## Research Interests
+ - Agent-based modelling
+ - GIS
+ - Nonlinear Statistics
+ - Spatial Statistics
+ - Urban Air Pollution
+ - Urban Traffic
+ - Volunteering Geographic Information (VGI)
+ - Citizen Science
+
+## Skills
+- **R** for data related work: I have been using R since 2012 and whenever it makes sense, I use it for my projects.
+- **NetLogo**: NetLogo has been my friend and fiend since 2013. This lad helped me two earn two important degrees in my life: Master/Ph.D
+- **Git**: first rule of programming: always use version control.
+
+## Follow me
+- `r fontawesome::fa("github")` [mrsensible](https://github.com/mrsensible/)
+- `r fontawesome::fa("gitlab")` [mrsensible](https://gitlab.com/mrsensible/)
+- `r fontawesome::fa("twitter")` [hyesop](https://twitter.com/hyesop/)
+

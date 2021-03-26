@@ -8,23 +8,20 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
     - text: "Research"
       menu:
-      - text: "Current research"
-        href: research.html
-      - text: "-------"
-      - text: "Human Exposure to Air Pollution"
+      - text: "VGI"
+      - text: "Gamification for Urban Research"
+      - text: "Human Exposure to Air Pollution (Ph.D)"
         href: ABM1.html
-      - text: "Foot-and-Mouth Disease"
+      - text: "Foot-and-Mouth Disease (MA)"
         href: ABM0.html  
     - text: "CV"
       href: CV.html
     - text: "Tour"
       menu:
-      - text: "Cambridge (2019)"
-        href: Cambridge_Tour.html  
+      - text: "Cambridge City"
+        href: Tour_Cambridge.html  
     - text: "Blog"
       href: blog.html  
 output:

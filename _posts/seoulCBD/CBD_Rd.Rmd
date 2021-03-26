@@ -3,6 +3,7 @@ title: "Road Speed in Seoul CBD area"
 author:
   - name: Hyesop Shin
 date: "`r Sys.Date()`"
+draft: true
 output: distill::distill_article
 ---
 
