@@ -4,6 +4,9 @@ description: |
   Welcome to Hyesop Shin's Website
 output_dir: "_site"
 theme: theme.css
+base_url: https://hyesop.rbind.io/
+repository_url: https://github.com/mrsensible/myblog
+creative_commons: CC BY-SA
 navbar:
   right:
     - text: "Home"
