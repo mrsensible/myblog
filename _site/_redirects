@@ -1,0 +1,3 @@
+http://hyesop.rbind.io/*      https://hyesop.rbind.io/:splat  301!
+https://hyesop.netlify.app/*  https://hyesop.rbind.io/:splat  301!
+http://hyesop.netlify.app/*   https://hyesop.rbind.io/:splat  301!
